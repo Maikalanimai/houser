@@ -32,29 +32,34 @@ class Wizard extends Component {
         </Link>
         <main className='input-holder'>
           <input
-            placeholder="name"
+            placeholder="Name"
             onChange={e => this.props.updateName(e.target.value)}
             maxLength='30'
+            value={this.props.name}
           />
           <input
             maxLength='100'
-            placeholder="address"
+            placeholder="Address"
             onChange={e => this.props.updateAddress(e.target.value)}
+            value={this.props.address}
           />
           <input
             maxLength='100'
-            placeholder="city"
+            placeholder="City"
             onChange={e => this.props.updateCity(e.target.value)}
+            value={this.props.city}
           />
           <input
             maxLength='2'
-            placeholder="state"
+            placeholder="State"
             onChange={e => this.props.updateProvince(e.target.value)}
+            value={this.props.province}
           />
           <input
             type='number'
-            placeholder="zipcode"
+            placeholder="Zip Code"
             onChange={e => this.props.updateZip(e.target.value)}
+            value={this.props.zip}
           />
         </main>
         <button className='next' onClick={() => this.props.history.push("/wizard/2")}>

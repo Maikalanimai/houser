@@ -35,11 +35,17 @@ class Wizard2 extends Component {
           <input
             placeholder="Img URL"
             onChange={e => this.props.updateImg(e.target.value)}
+            value={this.props.img}
           />
         </main>
+        <div className='vert-sep'>
+        <button className='next' onClick={() => this.props.history.push("/wizard/1")}>
+          ＜＜＜Previous
+        </button>
         <button className='next' onClick={() => this.props.history.push("/wizard/3")}>
           Next＞＞＞
         </button>
+        </div>
       </div>
     );
   }

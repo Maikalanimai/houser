@@ -56,14 +56,21 @@ class Wizard3 extends Component {
             type="number"
             placeholder="Mortgage"
             onChange={e => this.props.updateMortgage(e.target.value)}
+            value={this.props.mortgage}
           />
           <input
             type="number"
             placeholder="Rent"
             onChange={e => this.props.updateRent(e.target.value)}
+            value={this.props.rent}
           />
         </main>
+        <div className='vert-sep'>
+        <button className='next' onClick={() => this.props.history.push("/wizard/2")}>
+          ＜＜＜Previous
+        </button>
         <button className='next' onClick={() => this.add()}>＞＞Add Property!＜＜</button>
+        </div>
       </div>
     );
   }
