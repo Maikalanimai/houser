@@ -6,7 +6,8 @@
 }
 .dash-head{
   height: 10vh;
-  padding-top: 3vh;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
 }
 .dash-title{
   font-size: 2.5rem;
@@ -22,12 +23,14 @@
   transition: 300ms;
   padding-right: 1rem;
   padding-left: 1rem;
+  border-radius: 5px;
 }
 .vert-sep{
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
+  padding-top: 15px;
   
 }
 .listing{
@@ -42,3 +45,4 @@ hr{
   border: 1px solid black;
   color: white;
 }
+

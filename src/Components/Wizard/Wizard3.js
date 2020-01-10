@@ -33,6 +33,7 @@ class Wizard3 extends Component {
   render() {
     return (
       <div className='wizard'>
+        <div className='vert-sep'>
         <h2 className='wizard-number'>Wizard 3</h2>
         <Link to="/">
           <button className='cancel'
@@ -43,13 +44,14 @@ class Wizard3 extends Component {
               this.props.updateName("");
               this.props.updateZip(null);
               this.props.updateImg("");
-              this.props.updateMortgage("");
-              this.props.updateRent("");
+              this.props.updateMortgage(null);
+              this.props.updateRent(null);
             }}
           >
             Cancel
           </button>
         </Link>
+        </div>
   <h3 className='rent'>Recomended Rent: ${this.props.mortgage * 1.25}</h3>
         <main className='input-holder'>
           <input

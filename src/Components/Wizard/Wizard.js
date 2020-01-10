@@ -16,6 +16,7 @@ class Wizard extends Component {
   render() {
     return (
       <div className='wizard'>
+        <div className='vert-sep'>
         <h2 className='wizard-number'>Wizard 1</h2>
         <Link to="/">
           <button className='cancel'
@@ -30,6 +31,7 @@ class Wizard extends Component {
             Cancel
           </button>
         </Link>
+          </div>
         <main className='input-holder'>
           <input
             placeholder="Name"

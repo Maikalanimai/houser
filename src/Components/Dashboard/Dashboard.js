@@ -40,8 +40,8 @@ class Dashboard extends Component {
     this.props.updateName("");
     this.props.updateZip(null);
     this.props.updateImg("");
-    this.props.updateMortgage("");
-    this.props.updateRent("");
+    this.props.updateMortgage(null);
+    this.props.updateRent(null);
   }
 
   componentDidUpdate(oldProps) {
@@ -85,12 +85,12 @@ class Dashboard extends Component {
             width={100}
             timeout={3000} //3 secs
           />
-        ) : (
+        ) : (<div>{
           this.state.houses.map((e, i) => {
             return (
               <House info={e} index={i} updateHouses={this.updateHouses} />
             );
-          })
+          })}</div>
         )}
       </div>
     );
