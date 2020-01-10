@@ -53,10 +53,12 @@ class Wizard3 extends Component {
   <h3 className='rent'>Recomended Rent: ${this.props.mortgage * 1.25}</h3>
         <main className='input-holder'>
           <input
+            type="number"
             placeholder="Mortgage"
             onChange={e => this.props.updateMortgage(e.target.value)}
           />
           <input
+            type="number"
             placeholder="Rent"
             onChange={e => this.props.updateRent(e.target.value)}
           />

@@ -20,8 +20,8 @@ class House extends Component {
           <li>City: {this.props.info.city}</li>
           <li>State: {this.props.info.state}</li>
           <li>Zip: {this.props.info.zip}</li>
-          <li>Mortgage: {this.props.info.mortgage}</li>
-          <li>Rent: {this.props.info.rent}</li>
+          <li>Mortgage: ${this.props.info.mortgage}</li>
+          <li>Rent: ${this.props.info.rent}</li>
         </ul>
         <button className='delete' onClick={() => this.deleteHouse()}>Delete</button>
         </div>
