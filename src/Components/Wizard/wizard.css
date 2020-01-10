@@ -18,6 +18,7 @@
   font-size: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  transition: 300ms;
 }
 input {
   margin: 3vh 5vw;
@@ -35,8 +36,21 @@ input {
   padding-left: 1rem;
   padding-right: 1rem;
   color: white;
+  transition: 300ms;
 }
 
 .rent{
   font-size: 1.5rem;
+}
+
+.cancel:hover{
+  background: #ff2a2a;
+  font-weight: bolder;
+  color: white;
+  border: grey 1px solid;
+}
+
+.next:hover{
+  background: #54af8c;
+  color: black;
 }

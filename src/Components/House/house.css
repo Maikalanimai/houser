@@ -21,4 +21,11 @@ ul {
   background: #fec2c2;
   font-weight: bold;
   color: #35644b;
+  transition: 300ms;
+}
+.delete:hover{
+  background: #ff2a2a;
+  font-weight: bolder;
+  color: white;
+  border: grey 1px solid;
 }

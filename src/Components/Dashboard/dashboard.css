@@ -19,14 +19,26 @@
   font-weight: bold;
   border: none;
   font-size: 1.5rem;
-  padding-left: 1rem;
+  transition: 300ms;
   padding-right: 1rem;
+  padding-left: 1rem;
 }
 .vert-sep{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
   
+}
+.listing{
+  font-size: 2rem;
 }
 hr{
   border: black 1px solid;
+}
+
+.add-property:hover{
+  background:#3b5249;
+  border: 1px solid black;
+  color: white;
 }

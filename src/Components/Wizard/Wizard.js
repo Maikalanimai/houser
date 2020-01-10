@@ -34,20 +34,20 @@ class Wizard extends Component {
           <input
             placeholder="name"
             onChange={e => this.props.updateName(e.target.value)}
-            maxlength='30'
+            maxLength='30'
           />
           <input
-            maxlength='100'
+            maxLength='100'
             placeholder="address"
             onChange={e => this.props.updateAddress(e.target.value)}
           />
           <input
-            maxlength='100'
+            maxLength='100'
             placeholder="city"
             onChange={e => this.props.updateCity(e.target.value)}
           />
           <input
-            maxlength='2'
+            maxLength='2'
             placeholder="state"
             onChange={e => this.props.updateProvince(e.target.value)}
           />
