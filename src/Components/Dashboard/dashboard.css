@@ -1,5 +1,32 @@
 .primary {
   width: 60vw;
+  width: 50vw;
   margin: auto;
- 
+  background: #e5f4ec;
+}
+.dash-head{
+  height: 10vh;
+  padding-top: 3vh;
+}
+.dash-title{
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #519872
+}
+.add-property{
+  background:#8aea92;
+  height: 3rem;
+  font-weight: bold;
+  border: none;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.vert-sep{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+hr{
+  border: black 1px solid;
 }

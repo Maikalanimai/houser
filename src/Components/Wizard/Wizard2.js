@@ -15,10 +15,10 @@ class Wizard2 extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Wizard 2</h2>
+      <div className='wizard'>
+        <h2 className='wizard-number'>Wizard 2</h2>
         <Link to="/">
-          <button
+          <button className='cancel'
             onClick={() => {
               this.props.updateAddress("")
                 this.props.updateCity("")
@@ -31,14 +31,14 @@ class Wizard2 extends Component {
             Cancel
           </button>
         </Link>
-        <main>
+        <main className='input-holder'>
           <input
             placeholder="Img URL"
             onChange={e => this.props.updateImg(e.target.value)}
           />
         </main>
-        <button onClick={() => this.props.history.push("/wizard/3")}>
-          Next
+        <button className='next' onClick={() => this.props.history.push("/wizard/3")}>
+          Next＞＞＞
         </button>
       </div>
     );

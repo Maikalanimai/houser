@@ -3,11 +3,22 @@ ul {
 }
 .house {
   display: grid;
-  width: 100%;
+  width: auto;
   grid-template-columns: 1fr 1fr;
-  margin: 5vh 5vw;
-  background:#dedede
+  margin-top: 5vh;
+  margin-right: 4%;
+  margin-left: 4%;
+  background:#dedede;
+  height: 20vh;
 }
 .house-image {
   height: 15vh;
+}
+.delete{
+  border: 1px solid #35644b;
+  height: 1.5rem;
+  padding: 0px 1rem;
+  background: #fec2c2;
+  font-weight: bold;
+  color: #35644b;
 }

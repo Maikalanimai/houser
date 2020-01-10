@@ -8,16 +8,17 @@ import {
   updateProvince,
   updateZip
 } from "../../ducks/reducer";
+import './wizard.css'
 
 class Wizard extends Component {
 
  
   render() {
     return (
-      <div>
-        <h2>Wizard 1</h2>
+      <div className='wizard'>
+        <h2 className='wizard-number'>Wizard 1</h2>
         <Link to="/">
-          <button
+          <button className='cancel'
             onClick={() => {
               this.props.updateAddress("")
                 this.props.updateCity("")
@@ -29,7 +30,7 @@ class Wizard extends Component {
             Cancel
           </button>
         </Link>
-        <main>
+        <main className='input-holder'>
           <input
             placeholder="name"
             onChange={e => this.props.updateName(e.target.value)}
@@ -51,8 +52,8 @@ class Wizard extends Component {
             onChange={e => this.props.updateZip(e.target.value)}
           />
         </main>
-        <button onClick={() => this.props.history.push("/wizard/2")}>
-          Next
+        <button className='next' onClick={() => this.props.history.push("/wizard/2")}>
+          Next＞＞＞
         </button>
       </div>
     );

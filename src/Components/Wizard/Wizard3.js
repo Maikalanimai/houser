@@ -32,10 +32,10 @@ class Wizard3 extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Wizard 3</h2>
+      <div className='wizard'>
+        <h2 className='wizard-number'>Wizard 3</h2>
         <Link to="/">
-          <button
+          <button className='cancel'
             onClick={() => {
               this.props.updateAddress("");
               this.props.updateCity("");
@@ -50,8 +50,8 @@ class Wizard3 extends Component {
             Cancel
           </button>
         </Link>
-        <main>
-  <h3>Recomended Rent: ${this.props.mortgage * 1.25}</h3>
+  <h3 className='rent'>Recomended Rent: ${this.props.mortgage * 1.25}</h3>
+        <main className='input-holder'>
           <input
             placeholder="Mortgage"
             onChange={e => this.props.updateMortgage(e.target.value)}
@@ -61,7 +61,7 @@ class Wizard3 extends Component {
             onChange={e => this.props.updateRent(e.target.value)}
           />
         </main>
-        <button onClick={() => this.add()}>Add Property</button>
+        <button className='next' onClick={() => this.add()}>＞＞Add Property!＜＜</button>
       </div>
     );
   }

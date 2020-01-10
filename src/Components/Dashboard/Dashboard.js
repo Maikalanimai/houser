@@ -61,11 +61,13 @@ class Dashboard extends Component {
   render() {
     return (
       <div className='primary'>
-        <header>
-          <h2>Dashboard</h2>
+        <header className='dash-head'>
+          <div className='vert-sep'>
+          <h2 className='dash-title'>Dashboard</h2>
         <Link to="/wizard/1">
-          <button>Add New Property</button>
+          <button className='add-property'>Add New Property</button>
         </Link>
+        </div>
         <hr/>
         <h3>Home Listings</h3>
         </header>
